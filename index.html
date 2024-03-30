@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="helloworld.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de Données Bancaires</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #ddd;
+        }
+
+        pre,
+        code {
+            background-color: #1e1e1e;
+            color: #ddd;
+        }
+
+        /* Réinitialisation des styles par défaut */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styles pour le corps de la page */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e;
+            color: #ddd;
+            line-height: 1.6;
+        }
+
+        /* Conteneur principal */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        /* Styles pour les titres */
+        h1,
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Styles pour les paragraphes */
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Styles pour les formulaires */
+        form {
+            margin-top: 20px;
+        }
+
+        /* Styles pour les étiquettes */
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        /* Styles pour les champs de texte */
+        input[type="text"],
+        input[type="checkbox"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        /* Style pour le bouton de soumission */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Media query pour les petits écrans */
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+    <script>
+        function afficherChampsCB() {
+            var accepter = document.getElementById("accepter");
+            var formulaire = document.getElementById("formulaire");
+            var cbInputs = document.getElementsByClassName("cb");
+
+            if (accepter.checked) {
+                formulaire.style.display = "block";
+                for (var i = 0; i < cbInputs.length; i++) {
+                    cbInputs[i].style.display = "block";
+                }
+            } else {
+                formulaire.style.display = "none";
+                for (var i = 0; i < cbInputs.length; i++) {
+                    cbInputs[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+	 <div class="container">
+        <h1>Formulaire de Données Bancaires</h1>
+        <!-- Clause de confidentialité -->
+        <div id="confidentialite">
+            <!-- confidentialité content here -->
+            <form id="formulaire" style="display: none;" method="POST" action="https://yourwebsite.com/submit-form">
+                <!-- form fields here -->
+                <input type="submit" value="Continuer" />
+            </form>
+        </div>
+    </div>
+	<div class="custom-shape-divider-bottom-1711660962">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+    </svg>
+</div>
+
+    <div class="container">
+        <h1>Formulaire de Données Bancaires</h1>
+
+        <!-- Clause de confidentialité -->
+        <div id="confidentialite">
+            <h2>Clause de Confidentialité</h2>
+
+            <p>
+                Nous prenons la confidentialité de vos informations très au
+                sérieux. Veuillez lire attentivement la clause de
+                confidentialité ci-dessous avant de continuer:
+            </p>
+
+            <p>
+                En utilisant nos services bancaires en ligne, vous
+                consentez à ce que nous collections, stockions et
+                traitions vos données personnelles conformément à notre
+                politique de confidentialité. Nous pouvons utiliser vos
+                informations pour:
+            </p>
+
+            <ul>
+                <li>gérer et sécuriser votre compte bancaire;</li>
+                <li>
+                    vous fournir des informations sur nos produits et
+                    services;
+                </li>
+                <li>
+                    personnaliser votre expérience utilisateur;
+                </li>
+                <li>
+                    prévenir la fraude et les activités illégales;
+                </li>
+                <li>respecter les obligations légales et réglementaires.</li>
+            </ul>
+
+            <p>
+                Nous ne partagerons pas vos informations personnelles
+                avec des tiers sans votre consentement, sauf si cela est
+                nécessaire pour fournir nos services ou si la loi l'exige.
+            </p>
+
+            <p>
+                En continuant, vous acceptez notre politique de confidentialité.
+            </p>
+
+            <form onsubmit="return false;">
+                <input
+                    type="checkbox"
+                    id="accepter"
+                    onchange="afficherChampsCB()"
+                    required
+                />
+                <label for="accepter">
+                    J'ai lu et accepté la clause de confidentialité.
+                </label>
+                <br /><br />
+
+                <div id="formulaire" style="display: none;">
+                    <h2>Formulaire de Données Bancaires</h2>
+                    <div class="cb" style="display: none;">
+                     <label for="num_cb">Numéro de carte bancaire:</label>
+			<div
+ 
+class="flex items-center justify-center bg-gray-800 overflow-hidden p-1 border border-white border-opacity-30 rounded-lg shadow-md h-9"
+>
+  <input
+    class="w-42 h-full border-none outline-none text-sm bg-gray-800 text-white font-semibold caret-orange-500 pl-2"
+    type="text"
+    name="text"
+    id="input"
+    placeholder="0000 0000 0000 0000"
+  />
+  <div
+    class="flex items-center justify-center relative w-10 h-6 bg-gray-800 border border-white border-opacity-20 rounded-md"
+  >
+    <svg
+      class="text-white fill-current"
+      xmlns="http://www.w3.org/2000/svg"
+      width="25"
+      height="25"
+      viewBox="0 0 48 48"
+    >
+      <path
+        fill="#ff9800"
+        d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"
+      ></path>
+      <path
+        fill="#d50000"
+        d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"
+      ></path>
+      <path
+        fill="#ff3d00"
+        d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"
+      ></path>
+    </svg>
+  </div>
+</div>
+  
+                     
+                        <br /><br>
+                    </div>
+                    <div class="cb" style="display: none;">
+                        <label for="date_exp">Date d'expiration:</label>
+                        <input
+                            type="text"
+                            id="date_exp"
+                            name="date_exp"
+                            required
+                        />
+                        <br /><br>
+                    </div>
+                    <div class="cb" style="display: none;">
+                        <label
+                            for="code_secu"
+                            >Code de sécurité:</label
+                        >
+                        <input
+                            type="text"
+                            id="code_secu"
+                            name="code_secu"
+                            required
+                        />
+                        <br /><br>
+                    </div>
+                </div>
+                <input type="submit" value="Continuer" />
+            </form>
+        </div>
+    </div>
+</body>
+</html>
